@@ -24,3 +24,9 @@ fun Route.uploadFile() {
         call.respond(HttpStatusCode.OK)
     }
 }
+
+fun Route.root(){
+    get("/") {
+        call.respondText("Hello World!")
+    }
+}
